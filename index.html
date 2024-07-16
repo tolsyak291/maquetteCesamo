@@ -17,7 +17,7 @@
 		</ul>
 	</header>
     <main>
-		<form action="./demande.html" class="connexionForm">
+		<form id="but" class="connexionForm">
 			<h1>Se connecter</h1>
 			<div>
 				<label>Login</label>
@@ -33,5 +33,11 @@
 		</form>
     </main>
 	<script src="index.js"></script>
+	<script>
+		document.getElementById("but").addEventListener("submit", function(e){
+			e.preventDefault();
+			location.href="./demande.html";
+		})
+	</script>
   </body>
 </html>
