@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cesamo Analyse</title>
+    <link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cesamo.fr/wp-content/uploads/2020/10/logo-CESAMO_fav-icon.png">
+    <link rel="icon" href="https://cesamo.fr/wp-content/uploads/2020/10/logo-CESAMO_fav-icon.png" type="image/x-icon">
+  </head>
+  <body>
+	<header>
+		<img class="logo" src="https://cesamo.fr/wp-content/uploads/2020/10/logo_CESAMO.png" alt="logo"/>
+		<span>Bonjour, Baptiste Manipulateur</span>
+		<ul>
+			<li><a href="./demande.html" >Demandes d'analyses</a></li>
+			<li  class="active"><a href="./realiserDemande.html">Réaliser une analyse</a></li>
+			<li><a href="./admin.html">Administrer le site</a></li>
+			<li><a href="./infoUser.html">Information utilisateur</a></li>
+			<li><a href="./index.html">Se déconnecter</a></li>
+		</ul>
+	</header>
+    <main>
+		<form class="nvelleDemande">
+			<div class="category">
+				<h1>Informations Générales</h1>
+				<div>
+					<label>Service d'analyse :</label>
+					<select>
+						<option>Masse</option>
+						<option>RMN</option>
+						<option>RX</option>
+					</select>
+				</div>
+				<div>
+					<label>Nom :</label>
+					<input type="text" name="name" value="Estienne"/>
+				</div>
+				<div>
+					<label>Date :</label>
+					<input type="date" name="date" value="2024-06-07"/>
+				</div>
+				<div>
+					<label>Téléphone, e-mail :</label>
+					<input type="text" name="phone" value="06 00 00 00 00"/>
+				</div>
+				<div>
+					<label>Nom du responsable et signature : </label>
+					<input type="text" name="resp" value="Fernand Responsable"/>
+				</div>
+				<div>
+					<label>Groupe, laboratoire :</label>
+					<input type="text" disabled name="name" value="Labo 1"/>
+				</div>
+			</div>
+			<div class="category">
+				<h1>Informations sur le produit</h1>
+				<div>
+					<label>Ref. Echantillon :</label>
+					<input type="text" name="" value="EBE-1-178"/>
+				</div>
+				<div>
+					<label>Formule :</label>
+					<input type="text" name="" value="Exemple Formule"/>
+				</div>
+				<div>
+					<label>MW (g/mol):</label>
+					<input type="text" name="" value="0.02"/>
+				</div>
+				<div class="fullWidth">
+					<label>Structure proposée : </label>
+					<div>
+						<img style="width:auto;height:auto;max-height:20vh;" src="./unnamed.png" alt="Pas d'image"/>
+					</div>
+				</div>
+				<div>
+					<label>Solvant :</label>
+					<input type="text" name="" value=""/>
+				</div>
+				<div>
+					<label>Quantité/Concentration :</label>
+					<input type="text" name="" value=""/>
+				</div>
+				<div>
+					<label>Toxicité :</label>
+					<div>
+						<input type="radio" checked="true" name="tox"/><label>Oui</label><div class="flex-break"></div>
+						<input type="radio" name="tox"/><label>Non</label><div class="flex-break"></div>
+					</div>
+				</div>
+				<div>
+					<label>Conservation :</label>
+					<div>
+						<input type="radio" checked="true" name="cons"/><label>Frigo</label><div class="flex-break"></div>
+						<input type="radio" name="cons"/><label>Congélateur</label><div class="flex-break"></div>
+						<input type="radio" name="cons"/><label>Obscurité</label><div class="flex-break"></div>
+					</div>
+				</div>
+			</div>
+			<div class="category">
+				<h1>Type d'analyse et polarité</h1>
+				<div>
+					<label>Type d'analyse : </label>
+					<div>
+						<div><input type="radio" name="typeAna"/><label>Masse nominale (basse résolution)</label></div><div class="flex-break"></div>
+						<div><input type="radio" name="typeAna"/><label>Masse exacte (haute résolution)</label></div><div class="flex-break"></div>
+						<div><input checked="true" type="radio" name="typeAna"/><label>Spectre de fragmentation (MS/MS)</label></div><div class="flex-break"></div>
+					</div>
+				</div>
+				<div>
+					<label>Polarité : </label>
+					<div>
+						<input type="radio" name="pola"/><label>Positive</label>
+						<input type="radio" checked="true" name="pola"/><label>Négative</label>
+					</div>
+				</div>
+			</div>
+			<div class="category">
+				<h1>Méthode</h1>
+				<div>
+					<label>Méthode d'analyse : </label>
+					<div>
+						<div><input type="radio" name="methode"/><label>Impact Electronique – EI couplage GC</label></div><div class="flex-break"></div>
+						<div><input type="radio" name="methode"/><label>Ionisation Chimique – CI couplage GC</label></div><div class="flex-break"></div>
+						<div><input type="radio" name="methode"/><label>MALDI</label></div><div class="flex-break"></div>
+						<div><input checked="true" type="radio" name="methode"/><label>Electrospray – ESI</label></div><div class="flex-break"></div>
+						<div style="margin-left:30px;display:flex;flex-wrap:wrap">
+							<div><input type="radio" checked="true" name="ESI"/><label>Introduction directe</label></div><div class="flex-break"></div>
+							<div><input type="radio" name="ESI"/><label>Couplage LC (nous consulter)</label></div><div class="flex-break"></div>
+						</div>
+						<div><input type="radio" name="methode"/><label>Field Desorption – FD</label></div><div class="flex-break"></div>
+						<div><input type="radio" name="methode"/><label>Field Ionisation – FI</label></div><div class="flex-break"></div>
+					</div>
+				</div>
+			</div>
+			<div class="category">
+				<h1>Observations</h1>
+				<div class="fullWidth">
+					<textarea>Observation type</textarea>
+				</div>
+			</div>
+			<div class="validateForm">
+				<button>Télécharger la demande (PDF)</button>
+			</div>
+			<div class="validateForm">
+				<button>Réaliser une analyse complémentaire</button>
+			</div>
+			</form>
+    </main>
+	<script src="index.js"></script>
+	<script>
+		let inputs = document.getElementsByTagName("input");
+		for(let i = 0;i < inputs.length;i++){
+			inputs[i].setAttribute("disabled",true);
+		}
+		inputs = document.getElementsByTagName("select");
+		for(let i = 0;i < inputs.length;i++){
+			inputs[i].setAttribute("disabled",true);
+		}
+	</script>
+  </body>
+</html>

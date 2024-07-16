@@ -1,0 +1,278 @@
+/*Règles générales*/
+body{
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	text-align:center;
+	width:100%;
+}
+
+header{
+	display: flex;
+	position:sticky;
+	top:0;
+	height: 80px;
+	background-color:white;
+}
+
+main{
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+
+ul{
+	list-style-type: none;
+	margin-left:auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+span{
+	align-content: center;
+}
+
+header > span{
+	margin-left:10px;
+}
+
+.active a{
+	color: rgb(239, 45, 86);
+}
+
+.active:hover a{
+	color: rgb(239, 45, 86);
+}
+
+header ul li{
+	float:left;
+	height:auto;
+	padding:16px 10px;
+	
+}
+
+header ul li:last-child{
+	margin-right:10px;
+	
+}
+
+.flex-break{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+button{
+	padding: 0;
+	border: 2px solid #0bf7c9;
+	background: none;
+	padding: 15px;
+	font-size:15px;
+	color:#0bf7c9;
+	font-family: 'Archivo', sans-serif;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+button:hover{
+	background-color: #0bf7c9;
+	color:white;
+	cursor:pointer;
+}
+
+header ul li a{
+	color: #9d9d9d;
+	font-size:15px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+header ul li:hover a{
+	color: #0bf7c9;
+}
+
+.logo{
+	height:auto
+}
+.connexionForm{
+	width:30vw;
+	border : 1px solid black;
+	border-radius:25px;
+	padding: 20px;;
+}
+.connexionForm > *{
+	margin-bottom:10px;
+}
+.connexionForm > div > label{
+	width: 20%;
+}
+
+.connexionForm > div{
+	display:flex;
+	justify-content: center;
+}
+
+/*Demandes analyses */
+table{
+	border-spacing:0;
+	border-collapse:collapse;
+	margin-top:10px;
+}
+td,th{
+	padding: 2px 0;
+}
+tr{
+	background-color:#0bf7c9;
+}
+tr:not(:first-child){
+	cursor:pointer;
+}
+tr:nth-child(odd){
+	background-color:white;
+}
+tr:not(:first-child):hover{
+	background-color:rgb(239, 45, 86);
+	color:white;
+}
+th{
+	width:15vw;
+}
+td{
+	text-align:center;
+}
+
+/*Nouvelles analyses*/
+.nvelleDemande{
+	width:90%;
+}
+
+.category{
+	width:100%;
+	border : 1px solid black;
+	margin: 10px 0;
+	display:flex;
+	flex-wrap:wrap;
+	padding:5px;
+}
+
+.category > h1{
+	margin-bottom:20px;
+}
+
+.category > *{
+	margin-bottom:10px;
+}
+.category > div > *:nth-child(1){
+	width: 25%;
+}
+.category > div > *:nth-child(2){
+	width: 50%;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:baseline;
+}
+
+.category > div{
+	display:flex;
+	justify-content: center;
+	width:50%;
+}
+input[type=radio]{
+	margin-left:20px;
+	margin-right:5px;
+}
+
+.validateForm{
+	width:100%;
+	margin-bottom:20px;
+}
+.validateForm > button{
+	width:100%;
+}
+.category .fullWidth{
+	width:100%;
+	padding:0 5px;
+}
+.category textarea{
+	width:100%!important;
+	height:20vh;
+}
+
+/* user form */
+.userPage{
+	justify-content:baseline;
+}
+.userForm{
+	margin-top:10px;
+	width:90%;
+}
+.userForm div{
+	margin-top:10px;
+}
+.passChange{
+	display:flex;
+	flex-wrap:wrap;
+}
+.passChange > label{
+	width:20%;
+	min-width: 270px;
+}
+.passChange > input{
+	width:250px;
+}
+
+/*Admin*/
+
+.adminView > button{
+	width:100%;
+	max-width:850px;
+	margin : 10px;
+}
+.exportData{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.exportData > *{
+	margin-top:10px;
+}
+.exportData > label{
+	width:20%;
+}
+.userTable tr td:last-child, .userTable tr th:last-child{
+	width : 35%;
+}
+.userAdminForm{
+	display:flex;
+	flex-wrap:wrap;
+}
+.userAdminForm > label{
+	width:20%;
+}
+.userAdminForm > select, .userAdminForm > input{
+	width:20%;
+}
+.adminLabos{
+	width:90%
+}
+table tr td button{
+	background-color:white;
+	width:45%;
+}
+.adminLabos button:not(:first-child){
+	margin-left:10px;
+}
+.adminLabos tr td:last-child{
+	padding:10px;
+	width:40%
+}
+.serviceAdmin .category table tr td input{
+	width:80%;
+}
+.serviceAdmin .category table tr td input[type="number"]{
+	width:20%;
+}

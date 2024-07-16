@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cesamo Analyse</title>
+    <link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cesamo.fr/wp-content/uploads/2020/10/logo-CESAMO_fav-icon.png">
+    <link rel="icon" href="https://cesamo.fr/wp-content/uploads/2020/10/logo-CESAMO_fav-icon.png" type="image/x-icon">
+  </head>
+  <body>
+	<header>
+		<img class="logo" src="https://cesamo.fr/wp-content/uploads/2020/10/logo_CESAMO.png" alt="logo"/>
+		<span>Bonjour, François Administrateur</span>
+		<ul>
+			<li><a href="./demande.html" >Demandes d'analyses</a></li>
+			<li><a href="./realiserDemande.html">Réaliser une analyse</a></li>
+			<li class="active"><a href="./admin.html">Administrer le site</a></li>
+			<li><a href="./infoUser.html">Information utilisateur</a></li>
+			<li><a href="./index.html">Se déconnecter</a></li>
+		</ul>
+	</header>
+    <main class="serviceAdmin">
+		<form class="userForm">
+			<div class="userAdminForm">
+				<label>Service : </label><select>
+					<option selected>Masse</option>
+					<option>RMN</option>
+					<option>RX</option>
+				</select><div class="flex-break"></div>
+			</div>
+			<div class="category">
+				<h1>Responsables</h1>
+				<table class="fullWidth">
+					<tr>
+						<th>Nom</th>
+						<th>Prénom</th>
+					</tr>
+					<tr>
+						<td>Baptiste</td>
+						<td>Manipulateur</td>
+					</tr>
+				
+				</table>
+			<button class="fullWidth">Ajouter un responsable</button>
+			</div>
+			<div class="category">
+				<h1>Catégories de champs</h1>
+				<table class="fullWidth">
+					<tr>
+						<th>Libellé</th>
+						<th>Ordre</th>
+					</tr>
+					<tr>
+						<td><input type="text" value="Informations générales"/></td>
+						<td><input type="number" min="1" value="1"/></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Informations sur le produit"/></td>
+						<td><input type="number" min="1" value="2"/></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Type d'analyse"/></td>
+						<td><input type="number" min="1" value="3"/></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Polarité"/></td>
+						<td><input type="number" min="1" value="4"/></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Méthode d'analyse"/></td>
+						<td><input type="number" min="1" value="5"/></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Observations"/></td>
+						<td><input type="number" min="1" value="6"/></td>
+					</tr>
+				</table>
+			<button class="fullWidth">Ajouter une catégorie</button>
+			</div>
+			<div class="category">
+				<h1>Champs</h1>
+				<table class="fullWidth">
+					<tr>
+						<th>Libellé</th>
+						<th>Catégorie</th>
+						<th>Type</th>
+						<th>Groupe</th>
+						<th>Obligatoire</th>
+						<th>Ordre</th>
+						<th>Action</th>
+					</tr>
+					<tr>
+						<td><input type="text" value="Nom"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option>Texte libre</option>
+							<option selected>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="1"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Date"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option>Texte libre</option>
+							<option>Automatique</option>
+							<option selected>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="2"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Téléphone, email"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option>Texte libre</option>
+							<option selected>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="3"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Groupe, Laboratoire"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option>Texte libre</option>
+							<option selected>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="4"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Nom du responsable et signature"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option selected>Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="5"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Référence echantillon"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option selected>Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="1"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Formule"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option selected>Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="2"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="MW (g/mol)"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option selected>Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="3"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Structure proposée"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option>Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option selected>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="4"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Solvant"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option selected>Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="5"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Quantité / Concentration"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option selected>Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="" disabled/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="6"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Toxicité (Oui)"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option >Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option selected>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="1"/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="7"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Toxicité (Non)"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option >Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option selected>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="1"/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="7"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Conservation (Frigo)"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option >Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option selected>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="2"/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="8"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Conservation (Congélateur)"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option >Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option selected>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="2"/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="8"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+					<tr>
+						<td><input type="text" value="Conservation (Obscurité)"/></td>
+						<td><select>
+							<option>Informations générales</option>
+							<option selected>Informations sur le produit</option>
+							<option>Type d'analyse</option>
+							<option>Polarité</option>
+							<option>Méthode d'analyse</option>
+							<option>Observations</option>
+						</select></td>
+						<td><select>
+							<option >Texte libre</option>
+							<option>Automatique</option>
+							<option>Date</option>
+							<option>Choix non-exclusif</option>
+							<option selected>Choix Exclusif</option>
+							<option>Image</option>
+							<option>Texte large</option>
+						</select></td>
+						<td><input type="number" min="1" value="2"/></td>
+						<td><input type="checkbox" checked /></td>
+						<td><input type="number" min="1" value="8"/></td>
+						<td><button>Supprimer</button></td>
+					</tr>
+				</table>
+				<button class="fullWidth">Ajouter un champ</button>
+				
+			</div>
+			<button style="width:100%; margin-bottom:30px;">Appliquer les changements</button>
+		</form> 
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
